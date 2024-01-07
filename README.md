@@ -24,7 +24,6 @@ The "30 Days of Hard JS Challenge" is an immersive coding journey designed to el
 ### Group Participation
 
 Join our group discussions and updates:
-- [Link to Group Chat/Forum]
 
 ## Why Join?
 
