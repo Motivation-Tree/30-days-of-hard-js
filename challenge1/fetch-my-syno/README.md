@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Here is the [Docs](./Docs.md)
 
-## Getting Started
+**[Demo](https://dub.sh/fetch-my-syno)**
 
-First, run the development server:
+**Stack**: Next 14/Typescript/Next UI/Tailwind/Google makesuite API
+**Features:** Word info/Type/Synonyms/Example sentences -- Per type
+**Development time:** 8 to 10 hours
+**Good side:** More than asked features/Better stack/Better DX/Best practices
+**Bad side:** Why to implement extra features. Too late. Time (10 hours, no)
+**Ideal:** It supposed to be functional, just an input and `ul` to show synonyms. (max time 3 hours.)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### How was the experience
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 1st time integrated Server actions (really hate),
+- 1st time used AI API. It was really cool but to format the data from repsonse was not cool.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### What can be improved
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Add loader
+- Make UI/UX even  better
+- RND
 
-## Learn More
+### Can it be used a production project or as SAAS
 
-To learn more about Next.js, take a look at the following resources:
+- It is good as hobby saas. Fun project
+- But in production some corner cases needs to handle.
+- I don't trust AI api response, it can be changed. That's a risk.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thanks
