@@ -28,7 +28,7 @@ export default async function Home({ searchParams }: Props) {
       </FsSection>
 
       {/* word info */}
-      {(data as WordResponse)?.types.some(
+      {(data as WordResponse)?.types?.filter(
         (t) => t === "noun" || t === "verb" || t === "adjective"
       ) ? (
         <FsTabs data={data as WordResponse} word={word} />
