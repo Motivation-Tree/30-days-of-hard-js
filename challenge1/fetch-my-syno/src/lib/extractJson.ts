@@ -1,17 +1,17 @@
 export const extractJson = (text: string) => {
-  const regex = /```json([\s\S]+?)```/;
+  const regex = /```json([\s\S]+?)```|```([\s\S]+?)```/;
   const match = text.match(regex);
 
-  if (match && match[1]) {
+  if (match && (match[1] || match[2])) {
+    const jsonData = match[1] || match[2];
     try {
-      const jsonData = JSON.parse(match[1]);
-      return jsonData;
-    } catch (error) {
-      console.error("Error parsing JSON:", error);
+      return JSON.parse(jsonData);
+    } catch (error: any) {
+      console.error("Error parsing JSON:", error.message);
       return null;
     }
   } else {
-    console.error("No JSON data found in the text");
-    return null;
+    console.log("No JSON found");
+    return JSON.parse(text);
   }
 };

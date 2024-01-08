@@ -28,7 +28,13 @@ export default async function Home({ searchParams }: Props) {
       </FsSection>
 
       {/* word info */}
-      <FsTabs data={data} word={word} />
+      {(data as WordResponse)?.types.some(
+        (t) => t === "noun" || t === "verb" || t === "adjective"
+      ) ? (
+        <FsTabs data={data as WordResponse} word={word} />
+      ) : (
+        <>Error generating synonyms</>
+      )}
     </main>
   );
 }
