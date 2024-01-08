@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: white;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input {
+  border-radius: 4rem;
+  outline: none;
+  padding: 10px;
+  width: 50%;
+}
+
+.send-btn {
+  background-color: #36454f;
+  border: none;
+  border-radius: 3rem;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
