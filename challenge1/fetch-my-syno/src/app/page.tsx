@@ -1,13 +1,20 @@
-import {
-  FsSearch,
-  FsSection,
-  FsSentenceList,
-  FsTitle,
-  FsWordInfo,
-  FsWordSynonyms,
-} from "@/components";
+import { FsSearch, FsSection, FsTitle } from "@/components";
+import { fsEnv } from "@/lib/getEnv";
+import { FsTabs } from "@/sections";
+import { generateSynonyms } from "./actions/generateSynonyms";
 
-export default function Home() {
+type Props = {
+  searchParams: {
+    word: string;
+  };
+};
+
+export default async function Home({ searchParams }: Props) {
+  const word = searchParams?.word || fsEnv.defaultWord;
+
+  if (!word) return;
+  const data = await generateSynonyms(word);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-around p-24 gap-y-3">
       {/* title */}
@@ -17,23 +24,11 @@ export default function Home() {
 
       {/* input */}
       <FsSection>
-        <FsSearch />
+        <FsSearch word={word} />
       </FsSection>
 
       {/* word info */}
-      <FsSection>
-        <FsWordInfo />
-      </FsSection>
-
-      {/* Word synonyms */}
-      <FsSection>
-        <FsWordSynonyms />
-      </FsSection>
-
-      {/* Sentence list */}
-      <FsSection>
-        <FsSentenceList />
-      </FsSection>
+      <FsTabs data={data} word={word} />
     </main>
   );
 }

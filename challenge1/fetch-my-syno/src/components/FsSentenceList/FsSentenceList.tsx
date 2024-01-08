@@ -1,18 +1,21 @@
 import { Card, CardBody, CardHeader, Divider } from "@nextui-org/react";
 
-const FsSentenceList = () => {
+const FsSentenceList: React.FC<FsSentenceListProps> = ({ examples }) => {
   return (
     <Card>
       <CardHeader>
-        <h4 className="font-bold text-large">Sentence List</h4>
+        <h4 className="font-bold text-large">Examples</h4>
       </CardHeader>
-      <CardBody>
-        <p>Make beautiful websites regardless of your design experience.</p>
-      </CardBody>
-      <Divider />
-      <CardBody>
-        <p>Make beautiful websites regardless of your design experience.</p>
-      </CardBody>
+
+      {examples.map((example, index) => (
+        <>
+          <CardBody key={index}>
+            <p>{example}</p>
+          </CardBody>
+
+          {examples.length - 1 !== index ? <Divider /> : null}
+        </>
+      ))}
     </Card>
   );
 };
