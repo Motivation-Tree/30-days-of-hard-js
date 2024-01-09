@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  /* color: #6a707c; */
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 21px;
+  box-sizing: border-box;
+}
+
+#root {
+  overflow: hidden;
+  height: 100vh;
+  font-family: Inter, sans-serif;
+}
