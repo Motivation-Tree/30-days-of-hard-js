@@ -43,7 +43,7 @@ function SynonymFinder() {
       <div>
         <input
           className="synonym-userInput"
-          placeholder="Type to search.."
+          placeholder="Search here"
           onChange={onChangeWord}
         />
         <button className="searchButton" onClick={handleClick}>
