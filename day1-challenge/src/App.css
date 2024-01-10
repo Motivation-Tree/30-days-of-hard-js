@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(194, 234, 234);
+}
+
+#searchWord {
+  padding: 10px;
+  border-radius: 16px;
+  width: 50%;
+}
+.buttons {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 8px;
+}
