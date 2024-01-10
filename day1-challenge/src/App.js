@@ -55,8 +55,9 @@ function App() {
   return (
     <div className="App">
       <>
+        <h2>Synonyms Fetcher</h2>
         <label for="searchWord">
-          <h2> Enter a Word and Click on Search</h2>
+          <h3> Enter a Word and Click on Search</h3>
         </label>
         <br />
         <div>

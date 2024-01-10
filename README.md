@@ -1,6 +1,5 @@
 # 30-days-of-hard-js
 
-
 Welcome to the "30 Days of Hard JS Challenge" repository! 🚀
 
 ## Overview
