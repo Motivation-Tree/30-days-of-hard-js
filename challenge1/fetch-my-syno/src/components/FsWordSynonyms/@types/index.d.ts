@@ -1,3 +1,0 @@
-type FsWordSynonymsProps = {
-  synonyms: string[];
-};
