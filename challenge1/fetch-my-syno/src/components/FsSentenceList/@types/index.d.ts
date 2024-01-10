@@ -1,3 +1,0 @@
-type FsSentenceListProps = {
-  examples: string[];
-};
