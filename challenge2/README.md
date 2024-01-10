@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+Here is the [Docs](./Docs.md)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**[Demo](https://dub.sh/persistent-bg-counter-loDMazf)**
 
-Currently, two official plugins are available:
+### End Goal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Make sure the timer continues ticking even when the **user closes and reopens the tab**.
 
-## Expanding the ESLint configuration
+### Features and implementations
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Stack**: React/Typescript/Vite/Vanilla CSS/Browser API (Local storage)
+**Features:** Persist state even page refresh or tab is closed counter stays running on background
+**Development time:** RnD (5 hours) + Dev time (3 hours)
+**Good side:** 80 % what was asked.
+**Bad side:** Time cost is 8 hours. Implemented counter instead of timer
+**Ideal:** It supposed to be timer. (3 to 5 (max) hours.)
 
-- Configure the top-level `parserOptions` property like this:
+### How was the experience
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- I really enjoyed, and learned a lot.
+- Date time functions, I hate. That's why I switch the timer to counter.
+- 1st time used I used beforeOnLoad event listener
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### What can be improved
+
+- Make it timer not counter
+- Make UI/UX even better
+- RND
+
+### Can it be used a production project or as SAAS
+
+- Make it timer and use it in production. As a counter yes it is ready to use in production
+
+Thanks
