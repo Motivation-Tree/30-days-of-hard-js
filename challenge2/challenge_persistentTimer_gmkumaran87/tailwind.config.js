@@ -7,6 +7,9 @@ export default {
         black: {
           seq: "#0F1527",
         },
+        red: {
+          primary: "rgb(186, 73, 73)",
+        },
       },
     },
   },

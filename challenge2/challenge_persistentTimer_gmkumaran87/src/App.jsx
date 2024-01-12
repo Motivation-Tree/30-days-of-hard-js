@@ -2,12 +2,13 @@
 
 import "./App.css";
 import Header from "./components/Header";
-import SynonymFinder from "./pages/SynonymFinder";
+import Timer from "./pages/Timer";
 
 function App() {
   return (
     <>
       <Header />
+      <Timer />
     </>
   );
 }
