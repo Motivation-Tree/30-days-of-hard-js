@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+.button {
+  padding: 5px;
+}
+
+body {
+  background-color: #febd17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.heading {
+  font-size: 3rem;
+  font-family: cursive;
+}
+
+.timer {
+  font-size: 3rem;
+  font-family: cursive;
+}
+.button {
+  width: 6rem;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: cursive;
+  font-size: 1rem;
+}
