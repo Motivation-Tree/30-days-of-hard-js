@@ -1,3 +1,0 @@
-type FsSearchProps = {
-  word: string;
-};
