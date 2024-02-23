@@ -1,0 +1,14 @@
+.tags-container {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tags {
+  margin: 10px;
+  padding: 5px 15px;
+  border-radius: 4rem;
+  background-color: #120e2d;
+}
