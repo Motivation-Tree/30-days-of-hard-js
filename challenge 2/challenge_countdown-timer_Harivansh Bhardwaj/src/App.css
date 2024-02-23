@@ -1,0 +1,128 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000; 
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  color: #fff;
+
+}
+
+
+.CountdownTimer {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.duration-button{
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+.h1{
+  font-size: 2em;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.counter{
+  font-size: 2em;
+  color: #ffecec;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.pause-button{
+  background-color: #f8ebeb;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+input{
+  background-color: #f8ebeb;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+ .stop-button{
+  background-color: #ff0000;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+ }
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  ;
+
+  
+}
+h5{
+  font-size: 1em;
+  color: #fff7f7;
+
+  margin: 30 32px;
+  margin-top: 250px;
+  cursor: pointer;
+
+  outline: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+ 
+
+
+}
