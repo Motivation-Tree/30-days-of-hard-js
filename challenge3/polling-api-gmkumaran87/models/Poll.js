@@ -9,9 +9,11 @@ const pollSchema = new mongoose.Schema(
     options: {
       type: "array",
       required: [true, "Please enter any one of the options"],
+      default: {},
     },
     votes: {
-      type: "number",
+      type: "object",
+      default: {},
     },
   },
   { timestamps: true }
